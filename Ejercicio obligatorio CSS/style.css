@@ -1,0 +1,14 @@
+div{
+    background-color: red;
+    width: 23%;
+    height: 400px;
+    float:left;
+    margin: 0% 1%;
+    font-size: 4em;
+    color:yellow;
+}
+
+#distinto{
+    color:white;
+    background: black;
+}

@@ -1,0 +1,114 @@
+<!-- 1. Escribe el código HTML y de Bootstrap correspondiente para la creación de una página web que posea el siguiente aspecto: https://aulasvirtuales.bue.edu.ar/pluginfile.php/182898/mod_journal/intro/15.1-%20imagen%20ejercicio%20obligatorio.jpg
+2. Subí y probá el código del punto 1 en el servidor de pruebas de http://www.cursophp.com.ar como vimos en el video de la unidad 1. Recordá cargar los archivos de bootstrap desde el link de BoostrapCDN
+3. Pasale el link a tu profe por mensaje dentro del aula virtual. -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Ejercicio obligatorio BOOTSTRAP 2</title>
+</head>
+
+<body>
+
+
+
+    <div class="container bg-light">
+        <form class="needs-validation">
+
+            <div class="row my-3">
+                <div class="col">
+                    <label for="nombre" class="mb-2">Nombre de pila:</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="col">
+                    <label for="apellido" class="mb-2">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" required>
+                </div>
+            </div>
+
+            <label class="sr-only mb-2" for="username">Nombre de usuario</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+            </div>
+
+            <label for="mail" class="mb-2">Correo electrónico (opcional):</label>
+            <input type="email" class="form-control mb-3" id="mail" placeholder="you@example.com">
+
+            <label for="direccion" class="mb-2">Habla a:</label>
+            <input type="text" class="form-control mb-3" id="direccion" placeholder="1234 Main St" required>
+
+            <label for="direccion2" class="mb-2">Dirección 2 (opcional):</label>
+            <input type="text" class="form-control" id="direccion2" placeholder="Apartamento o suite">
+
+            <div class="row mt-3 mb-5">
+                <div class="col">
+                    <label for="pais" class="mb-2">País:</label>
+                    <div class="input-group">
+                        <select class="form-select" id="pais" required>
+                            <option selected value="">Escoger...</option>
+                            <option value="1">Argentina</option>
+                            <option value="2">Chile</option>
+                            <option value="3">Brasil</option>
+                            <option value="4">Uruguay</option>
+                            <option value="5">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="estado" class="mb-2">Estado:</label>
+                    <div class="input-group">
+                        <select class="form-select" id="estado" required>
+                            <option selected value="">Escoger...</option>
+                            <option value="1">Buenos Aires</option>
+                            <option value="2">Santiago</option>
+                            <option value="3">Brasilia</option>
+                            <option value="4">Montevideo</option>
+                            <option value="5">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="cp" class="mb-2">Código postal:</label>
+                    <input type="text" class="form-control" id="cp" required>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="custom-control custom-checkbox mt-5">
+                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                <label class="custom-control-label" for="customControlInline">La dirección de envío es la misma que mi
+                    dirección de facturación</label>
+            </div>
+
+            <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                <label class="custom-control-label" for="customControlInline">Guarde esta información para la próxima
+                    vez</label>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Enviar</button>
+
+        </form>
+    </div>
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

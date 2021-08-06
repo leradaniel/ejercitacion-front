@@ -1,0 +1,39 @@
+<!-- Ejercicio Obligatorio
+1- Ingresá en el siguiente cuadro el código HTML y Javascript correspondiente para la creación de una página web que cumpla con los siguientes requisitos:
+Posea un script en javascript que utilice: 
+a)      bucles anidados y cálculos automáticos
+b)      genere las tablas de multiplicar del 9 al 11
+c)      muestre el resultado por pantalla en forma ordenada y descendente como el siguiente ejemplo:
+https://aulasvirtuales.bue.edu.ar/pluginfile.php/182910/mod_journal/intro/11.%20Imagen%20ejercicio%20obligatorio.jpg
+2- Subí y probá el código del punto 1 en el servidor de pruebas de http://www.cursophp.com.ar como vimos en el video de la unidad 1.
+3- Importante! Pasale el link a tu profe por mensaje dentro del aula virtual.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO OBLIGATORIO JAVASCRIPT 2</title>
+</head>
+
+<body>
+    <script>
+        var tabla = 11;
+        var tablas_totales = 3;
+        var multiplos = 9;
+        for (let j = 0; j < tablas_totales; j++) {
+            document.write("<strong>La tabla del ", tabla, ":</strong><br>");
+            for (let i = 1; i <= multiplos; i++) {
+                let resultado = tabla * i;
+                document.write(tabla, " x ", i, ": ", resultado, "<br>");
+            }
+            tabla--;
+            document.write("<br>");
+        }
+    </script>
+
+</body>
+
+</html>

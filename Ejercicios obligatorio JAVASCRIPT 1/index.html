@@ -1,0 +1,37 @@
+<!-- Ejercicio Obligatorio
+1- Ingresá en el siguiente cuadro el código HTML y Javascript correspondiente para la creación de una página web que posea el siguiente aspecto y cumpla con los siguientes requisitos:
+• Posea un script en javascript que declare:
+una variable llamada primera con un valor numérico = 40
+una variable llamada segunda con un valor numérico = 16
+una variable llamada sumatotal con un valor numérico de la suma de las dos variables anteriores.
+• y una salida por pantalla en HTML que muestre un mensaje y el valor de sumatotal:
+https://aulasvirtuales.bue.edu.ar/pluginfile.php/182904/mod_journal/intro/image1.png
+2- Subí y probá el código del punto 1 en el servidor de pruebas de http://www.cursophp.com.ar como vimos en el video de la unidad 1.
+3- Importante! Pasale el link a tu profe por mensaje dentro del aula virtual.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO OBLIGATORIO JAVASCRIPT 1</title>
+</head>
+
+<body>
+
+    <h1>El resultado de la suma de las dos variables es:</h1>
+    <h2 id="resultado">placeholder</h2>
+
+    <script>
+        var primera = 40;
+        var segunda = 16;
+        var sumatotal = primera + segunda;
+        var texto_h2 = document.getElementById("resultado");
+        texto_h2.textContent = sumatotal;
+    </script>
+
+</body>
+
+</html>
